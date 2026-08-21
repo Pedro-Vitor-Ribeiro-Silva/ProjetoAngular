@@ -75,3 +75,20 @@
 
   font-size: 13px;
 }
+@media (max-width: 700px) {
+
+  .footer {
+    padding: 50px 20px 25px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+}

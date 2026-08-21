@@ -53,3 +53,51 @@
 .nav a:hover {
   color: #1f5130;
 }
+.menu-button {
+  display: none;
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    height: 70px;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background: white;
+
+    display: none;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+}

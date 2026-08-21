@@ -1,16 +1,42 @@
 <header class="header">
+
   <div class="container">
 
     <a href="#inicio" class="logo">
       Brasilidades
     </a>
 
-    <nav class="nav">
-      <a href="#inicio">Início</a>
-      <a href="#cultura">Cultura</a>
-      <a href="#regioes">Regiões</a>
-      <a href="#sobre">Sobre</a>
+    <button
+      class="menu-button"
+      (click)="alternarMenu()"
+      aria-label="Abrir menu"
+    >
+      ☰
+    </button>
+
+    <nav
+      class="nav"
+      [class.open]="menuAberto"
+    >
+
+      <a href="#inicio" (click)="menuAberto = false">
+        Início
+      </a>
+
+      <a href="#cultura" (click)="menuAberto = false">
+        Cultura
+      </a>
+
+      <a href="#regioes" (click)="menuAberto = false">
+        Regiões
+      </a>
+
+      <a href="#sobre" (click)="menuAberto = false">
+        Sobre
+      </a>
+
     </nav>
 
   </div>
+
 </header>
