@@ -4,6 +4,7 @@ import { Header } from './components/header/header';
 import { Hero } from './components/hero/hero';
 import { Footer } from './components/footer/footer';
 import { Cultura } from './components/cultura/cultura';
+import { Regioes } from './components/regioes/regioes';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { Cultura } from './components/cultura/cultura';
     Header,
     Hero,
     Cultura,
+    Regioes,
     Footer
   ],
 

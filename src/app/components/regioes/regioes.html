@@ -1,0 +1,49 @@
+<section class="regioes" id="regioes">
+
+  <div class="section-header">
+
+    <span class="section-tag">
+      DO NORTE AO SUL
+    </span>
+
+    <h2>
+      Um Brasil
+      <span>de muitos Brasis.</span>
+    </h2>
+
+    <p>
+      Cada região possui suas próprias tradições,
+      sabores, músicas e histórias.
+    </p>
+
+  </div>
+
+  <div class="regions-grid">
+
+    @for (regiao of regioes; track regiao.nome) {
+
+      <article class="region-card">
+
+        <span class="region-name">
+          {{ regiao.nome }}
+        </span>
+
+        <h3>
+          {{ regiao.destaque }}
+        </h3>
+
+        <p>
+          {{ regiao.descricao }}
+        </p>
+
+        <span class="arrow">
+          →
+        </span>
+
+      </article>
+
+    }
+
+  </div>
+
+</section>
