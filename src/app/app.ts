@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Header } from './components/header/header';
 import { Hero } from './components/hero/hero';
 import { Footer } from './components/footer/footer';
+import { Cultura } from './components/cultura/cultura';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { Footer } from './components/footer/footer';
   imports: [
     Header,
     Hero,
+    Cultura,
     Footer
   ],
 

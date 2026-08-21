@@ -1,0 +1,45 @@
+<section class="cultura" id="cultura">
+
+  <div class="section-header">
+
+    <span class="section-tag">
+      NOSSA IDENTIDADE
+    </span>
+
+    <h2>
+      Uma cultura,
+      <span>mil histórias.</span>
+    </h2>
+
+    <p>
+      A cultura brasileira é resultado do encontro
+      de diferentes povos, tradições e histórias.
+    </p>
+
+  </div>
+
+  <div class="cards">
+
+    @for (cultura of culturas; track cultura.titulo) {
+
+      <article class="card">
+
+        <div class="icon">
+          {{ cultura.icone }}
+        </div>
+
+        <h3>
+          {{ cultura.titulo }}
+        </h3>
+
+        <p>
+          {{ cultura.descricao }}
+        </p>
+
+      </article>
+
+    }
+
+  </div>
+
+</section>
